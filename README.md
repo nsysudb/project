@@ -7,10 +7,9 @@ M124020026 簡筠庭
 M124020050 陳俞安
 
 
-資料集描述
+**資料集描述**
 Amazon Products Dataset 2023資料集
 "Amazon Products Dataset 2023"，列出了Amazon上可用的各種產品分類。
-
 該資料集分成兩個資料表：
   1. 資料表一：amazon_cat
     以下為此資料表的欄位：
@@ -30,7 +29,7 @@ Amazon Products Dataset 2023資料集
     isBestSeller：標示該產品是否為暢銷品的boolean。
     boughtInLastMonth：上個月估計購買的單位數。
 
-迷你世界描述
+**迷你世界描述**
   資料表一：AMAZON_CAT
     ID：這是主鍵（PK），每個產品分類都是唯一。
     category_name：這個欄位儲存每個產品分類的名稱，如"Car Care"或"Automotive Replacement Parts"等。
@@ -44,7 +43,7 @@ Amazon Products Dataset 2023資料集
     amazon_products資料表中的category_id與amazon_cat資料表中的ID之間存是一對多關係。
     這說明了amazon_cat中的每個分類可以與amazon_products中的多個產品相關聯。例如，"Baby Care Products"分類（在amazon_cat中）可以關聯到多個家電產品（在amazon_products中）。
 
-查詢句與查詢最佳化策略
+**查詢句與查詢最佳化策略**
 1.查詢句一
 查詢從 AMAZON_CAT、amazon_product ap兩張表格的產品分類名稱、產品名稱、評分、評論數、價格，而且這些數據的 boughtInLastMonth >100。
 
